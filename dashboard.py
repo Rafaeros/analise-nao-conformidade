@@ -99,7 +99,6 @@ def generate_graphics(
 
     return f1, f2, f3
 
-
 st.title("ANALISE DE NÃO CONFORMIDADES")
 file = st.file_uploader("ADICIONE O ARQUIVO EXCEL:", accept_multiple_files=False)
 st.write("DATA DO RELATORIO")
@@ -137,3 +136,5 @@ if generate_graphics_bt:
     st.plotly_chart(nc)
     st.plotly_chart(nc2)
     st.plotly_chart(nc3)
+
+st.link_button("Feito por: Rafael Costa", "https://github.com/Rafaeros")
